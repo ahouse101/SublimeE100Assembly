@@ -1,0 +1,82 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: E100 Assembly
+scopeName: source.easm
+fileTypes: [e, e100, easm]
+uuid: 2ab58527-fa06-43ab-ba1c-adee8c7bb7d1
+
+patterns:
+- comment: comments (single line)
+  name: comment.line.double-slash
+  match: ^\s*//.*\n?$
+
+- comment: preprocessor directive(s)
+  name: meta.preprocessor
+  match: ^(#include)\s+(\w*\.(?:e|e100|easm))\s*\n?$
+  captures:
+    '1': {name: keyword.control}
+    '2': {name: string.unquoted}
+
+- comment: .data statements
+  name: meta.variable
+  match: (^\w+)\s+(\.data)\s+(0[xX][\da-fA-F]+|\d+)(?:\s*|(?:\s+(\w*)))(?:\s*|(?:\s+(.*)))\n?$
+  captures:
+    '1': {name: variable.parameter}
+    '2': {name: variable.language}
+    '3': {name: constant.numeric}
+    '4': {name: support.constant}
+    '5': {name: invalid.illegal}
+
+- comment: halt statement (no arguments)
+  name: meta.statement
+  match: (^\w*)\s+(halt)(?:(?:\s+(\w*\s*\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  captures:
+    '1': {name: variable.parameter}
+    '2': {name: keyword.control}
+    '3': {name: support.constant}
+    '4': {name: invalid.illegal}
+
+- comment: ret statemnt (one argument)
+  name: meta.statement
+  match: (^\w*)\s+(ret)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w+))(?:(?:\s+(\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  captures:
+    '1': {name: variable.parameter}
+    '2': {name: keyword.control}
+    '3': {name: constant.numeric}
+    '4': {name: invalid.illegal}
+    '5': {name: variable.parameter}
+    '6': {name: support.constant}
+    '7': {name: invalid.illegal}
+
+- comment: two-argument opcode statements
+  name: meta.statement
+  match: (^\w*)\s+(call|cp|not)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:(?:\s+(\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  captures:
+    '1': {name: variable.parameter}
+    '2': {name: keyword.control}
+    '3': {name: constant.numeric}
+    '4': {name: invalid.illegal}
+    '5': {name: variable.parameter}
+    '6': {name: constant.numeric}
+    '7': {name: invalid.illegal}
+    '8': {name: variable.parameter} 
+    '9': {name: support.constant}
+    '10': {name: invalid.illegal}
+
+- comment: three-argument opcode statements
+  name: meta.statement
+  match: (^\w*)\s+(add|sub|mult|div|and|or|sl|sr|cpfa|cpta|be|bne|blt)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:\s*|(?:\s+(.*)))\n?$
+  captures:
+    '1': {name: variable.parameter}
+    '2': {name: keyword.control}
+    '3': {name: constant.numeric}
+    '4': {name: invalid.illegal}
+    '5': {name: variable.parameter}
+    '6': {name: constant.numeric}
+    '7': {name: invalid.illegal}
+    '8': {name: variable.parameter}
+    '9': {name: constant.numeric}
+    '10': {name: invalid.illegal}
+    '11': {name: variable.parameter}
+    '12': {name: invalid.illegal}
+...
