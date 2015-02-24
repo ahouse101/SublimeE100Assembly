@@ -1,6 +1,12 @@
 # E100 assembly for Sublime Text
 This is a Sublime Text package that provides syntax highlighting for E100 Assembly language. In the future, it may provide some other convenience features for working with the simple E100 microprocessor. 
 
+Some features are shown in the images below:
+![Syntax Highlighting Features](http://alexanderhouse.me/Syntax Highlighting Demo.png)
+
+Also, due to the way I've written the syntax definition file, Sublime won't highlight a statement until it's valid:
+![Dynamic Highlighting](http://alexanderhouse.me/E100 Syntax Hightighting Demo.gif)
+
 ## Installation Instructions
 #### Via Package Control *(recommended)*
 You can now get E100 assembly support directly through Package Control! Installing through package control will also keep the extension up-to-date, such as when syntax highlighting is improved or snippets are added.
