@@ -1,0 +1,21 @@
+// Comments are supported. 
+// Every opcode is supported, with or without labels. 
+// Decimal/hex numbers and labels are recognized as arguments.
+		add 58 0x5e 19
+label	sub dest 0x5e 19 
+
+// If you accidently put too many arguments, Sublime will now
+// warn you. Similarly, if you add arguments that you don't
+// need, Sublime will show them in a different color.
+		mult 42 var1 var2 oops
+		call 25 0x10 unused
+end		halt 0 0 0 
+
+// Sublime also knows that labels can't start with numbers.
+		cp 1label arg2
+1label	.data 0
+
+// #include directives and .data statements are highlighted
+// slightly differently to differentiate them from opcodes.
+label		.data 0x42
+#include	DeviceDriver.e
