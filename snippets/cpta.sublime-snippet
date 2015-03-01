@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[cpta ${1:source} ${2:array_start} ${3:index}]]></content>
+	<tabTrigger>cpta (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[array_start + mem[index]] = mem[source]]]></description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[.data ${1:value}]]></content>
+	<tabTrigger>data (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  Hard code a value into memory.]]></description>
+</snippet>

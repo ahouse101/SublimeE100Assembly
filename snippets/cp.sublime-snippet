@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[cp ${1:dest} ${2:source}]]></content>
+	<tabTrigger>cp (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[dest] = mem[source]]]></description>
+</snippet>

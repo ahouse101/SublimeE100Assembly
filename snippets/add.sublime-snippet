@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[add ${1:sum} ${2:num1} ${3:num2}]]></content>
+	<tabTrigger>add (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[sum] = mem[num1] + mem[num2]]]></description>
+</snippet>

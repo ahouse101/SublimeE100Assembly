@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[halt]]></content>
+	<tabTrigger>halt (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  Stop program execution.]]></description>
+</snippet>

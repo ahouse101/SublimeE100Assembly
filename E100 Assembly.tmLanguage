@@ -73,7 +73,7 @@
 			<key>comment</key>
 			<string>.data statements</string>
 			<key>match</key>
-			<string>^(?:(\d+\w*)|([^\d]\w*))\s+(\.data)\s+(0[xX][\da-fA-F]+|\d+)(?:\s*|(?:\s+(.*)))\n?$</string>
+			<string>^(?:(\d+\w*)|([^\d]?\w*))\s+(\.data)\s+(0[xX][\da-fA-F]+|\d+)(?:\s*|(?:\s+(.*)))\n?$</string>
 			<key>name</key>
 			<string>meta.variable</string>
 		</dict>
@@ -109,7 +109,7 @@
 			<key>comment</key>
 			<string>halt statement (no arguments)</string>
 			<key>match</key>
-			<string>^(?:(\d+\w*)|([^\d]\w*))\s+(halt)(?:(?:\s+(\w*\s*\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
+			<string>^(?:(\d+\w*)|([^\d]?\w*))\s+(halt)(?:(?:\s+(\w*\s*\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
 			<key>name</key>
 			<string>meta.statement</string>
 		</dict>
@@ -160,7 +160,7 @@
 			<key>comment</key>
 			<string>ret statemnt (one argument)</string>
 			<key>match</key>
-			<string>^(?:(\d+\w*)|([^\d]\w*))\s+(ret)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w+))(?:(?:\s+(\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
+			<string>^(?:(\d+\w*)|([^\d]?\w*))\s+(ret)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w+))(?:(?:\s+(\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
 			<key>name</key>
 			<string>meta.statement</string>
 		</dict>
@@ -226,7 +226,7 @@
 			<key>comment</key>
 			<string>two-argument opcode statements</string>
 			<key>match</key>
-			<string>^(?:(\d+\w*)|([^\d]\w*))\s+(call|cp|not)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:(?:\s+(\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
+			<string>^(?:(\d+\w*)|([^\d]?\w*))\s+(call|cp|not)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:(?:\s+(\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$</string>
 			<key>name</key>
 			<string>meta.statement</string>
 		</dict>
@@ -302,7 +302,7 @@
 			<key>comment</key>
 			<string>three-argument opcode statements</string>
 			<key>match</key>
-			<string>^(?:(\d+\w*)|([^\d]\w*))\s+(add|sub|mult|div|and|or|sl|sr|cpfa|cpta|be|bne|blt)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:\s*|(?:\s+(.*)))\n?$</string>
+			<string>^(?:(\d+\w*)|([^\d]?\w*))\s+(add|sub|mult|div|and|or|sl|sr|cpfa|cpta|be|bne|blt)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:\s*|(?:\s+(.*)))\n?$</string>
 			<key>name</key>
 			<string>meta.statement</string>
 		</dict>

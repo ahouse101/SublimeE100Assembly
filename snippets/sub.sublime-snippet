@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[sub ${1:difference} ${2:num1} ${3:num2}]]></content>
+	<tabTrigger>sub (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[difference] = mem[num1] - mem[num2]]]></description>
+</snippet>

@@ -19,7 +19,7 @@ patterns:
 
 - comment: .data statements
   name: meta.variable
-  match: ^(?:(\d+\w*)|([^\d]\w*))\s+(\.data)\s+(0[xX][\da-fA-F]+|\d+)(?:\s*|(?:\s+(.*)))\n?$
+  match: ^(?:(\d+\w*)|([^\d]?\w*))\s+(\.data)\s+(0[xX][\da-fA-F]+|\d+)(?:\s*|(?:\s+(.*)))\n?$
   captures:
     '1': {name: invalid.illegal}
     '2': {name: variable.parameter}
@@ -29,7 +29,7 @@ patterns:
 
 - comment: halt statement (no arguments)
   name: meta.statement
-  match: ^(?:(\d+\w*)|([^\d]\w*))\s+(halt)(?:(?:\s+(\w*\s*\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  match: ^(?:(\d+\w*)|([^\d]?\w*))\s+(halt)(?:(?:\s+(\w*\s*\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
   captures:
     '1': {name: invalid.illegal}
     '2': {name: variable.parameter}
@@ -39,7 +39,7 @@ patterns:
 
 - comment: ret statemnt (one argument)
   name: meta.statement
-  match: ^(?:(\d+\w*)|([^\d]\w*))\s+(ret)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w+))(?:(?:\s+(\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  match: ^(?:(\d+\w*)|([^\d]?\w*))\s+(ret)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w+))(?:(?:\s+(\w*\s*\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
   captures:
     '1': {name: invalid.illegal}
     '2': {name: variable.parameter}
@@ -52,7 +52,7 @@ patterns:
 
 - comment: two-argument opcode statements
   name: meta.statement
-  match: ^(?:(\d+\w*)|([^\d]\w*))\s+(call|cp|not)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:(?:\s+(\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
+  match: ^(?:(\d+\w*)|([^\d]?\w*))\s+(call|cp|not)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:(?:\s+(\w*))|\s*)(?:\s*|(?:\s+(.*)))\n?$
   captures:
     '1': {name: invalid.illegal}
     '2': {name: variable.parameter}
@@ -68,7 +68,7 @@ patterns:
 
 - comment: three-argument opcode statements
   name: meta.statement
-  match: ^(?:(\d+\w*)|([^\d]\w*))\s+(add|sub|mult|div|and|or|sl|sr|cpfa|cpta|be|bne|blt)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:\s*|(?:\s+(.*)))\n?$
+  match: ^(?:(\d+\w*)|([^\d]?\w*))\s+(add|sub|mult|div|and|or|sl|sr|cpfa|cpta|be|bne|blt)\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))\s+(?:(0[xX][\da-fA-F]+|\d+)|(\d+\w+)|([^\d]\w*))(?:\s*|(?:\s+(.*)))\n?$
   captures:
     '1': {name: invalid.illegal}
     '2': {name: variable.parameter}

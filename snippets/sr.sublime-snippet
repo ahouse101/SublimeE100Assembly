@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[sr ${1:shifted} ${2:num} ${3:shift_amount}]]></content>
+	<tabTrigger>sr (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[shifted] = mem[num1] >> mem[shift_amount]]]></description>
+</snippet>

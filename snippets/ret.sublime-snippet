@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[ret ${1:return_address}]]></content>
+	<tabTrigger>ret (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  Return from a function.]]></description>
+</snippet>

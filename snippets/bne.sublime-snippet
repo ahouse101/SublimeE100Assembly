@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[bne ${1:goto} ${2:left} ${3:right}]]></content>
+	<tabTrigger>bne (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  Jump to 'goto' if the mem[left] != mem[right].]]></description>
+</snippet>

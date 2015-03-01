@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[cpfa ${1:dest} ${2:array_start} ${3:index}]]></content>
+	<tabTrigger>cpfa (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[dest] = mem[array_start + mem[index]]]]></description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[not ${1:result} ${2:num}]]></content>
+	<tabTrigger>not (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[result] = ~mem[num]]]></description>
+</snippet>

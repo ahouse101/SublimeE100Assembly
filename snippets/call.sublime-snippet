@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[call ${1:function} ${2:return_address}]]></content>
+	<tabTrigger>call (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  Jump to a function.]]></description>
+</snippet>

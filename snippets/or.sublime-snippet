@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[or ${1:result} ${2:num1} ${3:num2}]]></content>
+	<tabTrigger>or (with hints)</tabTrigger>
+	<scope>source.easm</scope>
+	<description><![CDATA[  mem[result] = mem[num1] + mem[num2]]]></description>
+</snippet>
